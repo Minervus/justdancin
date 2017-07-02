@@ -62,16 +62,16 @@ function initialize() {
     labelClass: "labels" // the CSS class for the label
   });
 
-  // var marker2 = new MarkerWithLabel({
-  //   position: new google.maps.LatLng(-12.046040, -77.029269),
-  //   draggable: false,
-  //   raiseOnDrag: false,
-  //   icon: ' ',
-  //   map: map,
-  //   labelContent: '<div class="de-icon circle small-size" style="background-color:#6a6a6a"><i class="de-icon-taxi"></i></div>',
-  //   labelAnchor: new google.maps.Point(0, 0),
-  //   labelClass: "labels" // the CSS class for the label
-  // });
+  var marker2 = new MarkerWithLabel({
+    position: new google.maps.LatLng(49.219996, -123.046207),
+    draggable: false,
+    raiseOnDrag: false,
+    icon: ' ',
+    map: map,
+    labelContent: '<div class="de-icon circle small-size" style="background-color:#6a6a6a"><i class="de-icon-taxi"></i></div>',
+    labelAnchor: new google.maps.Point(0, 0),
+    labelClass: "labels" // the CSS class for the label
+  });
 
   // var marker3 = new MarkerWithLabel({
   //   position: new google.maps.LatLng(-12.045909, -77.031712),
@@ -133,7 +133,7 @@ function initialize() {
   //INFO WINDOWS
   //=======================================================================================
   var contentString = '<div>WEDDING CEREMONY</div>';
-  var contentString1 = '<div>WEDDING PARTY</div>';
+  var contentString1 = '<div>TEA CEREMONY</div>';
 
   var infowindow = new google.maps.InfoWindow({
     content: contentString
@@ -147,11 +147,16 @@ function initialize() {
   //OPEN INFO WINDOWS ON LOAD
   //=======================================================================================
   infowindow.open(map, marker1);
+  infowindow.open(map, marker2);
 
-  //ON CLICK MARKER, OPEN INFO WINDOWS
+  // ON CLICK MARKER, OPEN INFO WINDOWS
   //=======================================================================================
   google.maps.event.addListener(marker1, 'click', function() {
     infowindow.open(map, marker1);
+  });
+
+  google.maps.event.addListener(marker2, 'click', function() {
+    infowindow1.open(map, marker2);
   });
 
   //ON MARKER CLICK EVENTS
