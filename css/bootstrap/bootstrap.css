@@ -607,6 +607,9 @@ th {
 .glyphicon-eye-close:before {
   content: "\e106";
 }
+.glyphicon-grain:before {
+  content: "\e239";
+}
 .glyphicon-warning-sign:before {
   content: "\e107";
 }
