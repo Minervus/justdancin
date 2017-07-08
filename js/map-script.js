@@ -49,7 +49,7 @@ function initialize() {
     raiseOnDrag: false,
     icon: ' ',
     map: map,
-    labelContent: '<div class="de-icon circle small-size" style="background-color:#fff; border:1px solid #119E8A"><i class="glyphicon glyphicon-grain" style="color:#119E8A"></i></div>',
+    labelContent: '<div class="de-icon circle small-size" style="background-color:#fff; border:1px solid #119E8A"><i class="de-icon-leaf" style="color:#119E8A"></i></div>',
     labelAnchor: new google.maps.Point(20, 26),
     labelClass: "labels" // the CSS class for the label
   });
