@@ -20,17 +20,17 @@
 			}
 		}
 
-		$email_to  =  'gyau88@gmail.com';
+		u  =  'gyau88@gmail.com';
 
 		$headers = "From: ".$_POST["inputemail"]."\r\n";
 		$headers .= "Reply-To: ".$_POST["inputemail"]."\r\n";
 		$subject = "RSVP message from Mr/Mrs ".$_POST["inputname"];
 
 		if(mail($email_to, $subject, $finalmessage, $headers)){
-        	$output = json_encode(array('type'=>'success', 'text' => 'Message Sent'));
-    	}else{
-        	$output = json_encode(array('type'=>'error', 'text' => 'Failed'));
-   		}
+			$output = json_encode(array('type'=>'success', 'text' => 'Message Sent'));
+		}else{
+			$output = json_encode(array('type'=>'error', 'text' => 'Failed'));
+		}
 		die($output);
 	}
 ?>
