@@ -17,10 +17,10 @@
 
 		$final_message .= "Secondary Guests:\n"
 		foreach ($_POST["secondary"] as $guest) {
-			$final_message .= "- " . $guest . "\n"
+			$final_message .= "- " . $guest . "\n";
 		}
 
-		$email_to  =  'tonyandamandanguyen@gmail.com';
+		$email_to  =  "tonyandamandanguyen@gmail.com";
 		$email_subject = "Wedding RSVP"; 
 
 		$headers = "From: ".$_POST["inputemail"]."\r\n";
