@@ -31,7 +31,7 @@ function sortGuestsByName () {
 }
 
 function updatePlusGuests () {
-  var selectedIndex = $('#inputname').val()
+  var selectedIndex = $('#primary').val()
   var selected = guests[selectedIndex]
 
   var plussesElement = $('#plusses')
@@ -48,11 +48,11 @@ function updatePlusGuests () {
   // CREATE A CHECKBOX FOR EACH PLUS GUEST FOR THE SELECTED GUEST
   $.each(selected.plusses, function (i, plus) {
     var container = $('<div>')
-    var name = selected.name.split(' ').join('-').toLowerCase()
+    var name = plus.split(' ').join('-').toLowerCase()
     var id = 'p-' + name
 
     container.append($('<input>', {
-      class: 'plus-checkbox',
+      class: 'plus-checkbox ajax-input ajax-checkbox-guest',
       type: 'checkbox',
       id: id,
       name: id,
@@ -69,7 +69,7 @@ function updatePlusGuests () {
 $(document).ready(function () {
   sortGuestsByName()
 
-  var selectElement = $('#inputname')
+  var selectElement = $('#primary')
   $.each(guests, function (i, guest) {
     selectElement.append($('<option>', {
       value: i,
@@ -81,4 +81,4 @@ $(document).ready(function () {
 })
 
 // HANDLE GUEST NAME CHANGE
-$('#inputname').change(updatePlusGuests)
+$('#primary').change(updatePlusGuests)
