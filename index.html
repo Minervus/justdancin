@@ -1630,20 +1630,17 @@
           <form method="post" action="rsvp.php" id="rsvpform">
             <div class="col-md-6">
               <div id="fullname" class="form-group">
-                <label for="inputname">*NAME</label>
-                <input type="text" class="form-control ajax-input" id="inputname" placeholder="" data-required="Name Required" data-output-label="Output Name">
+                <label for="inputname">* NAME</label>
+                <select id="inputname" class="form-control ajax-input" data-required="Please Select Your Name" data-output-label="Output Name"></select>
+                <!-- <input type="text" class="form-control ajax-input" id="inputname" placeholder="" data-required="Name Required" data-output-label="Output Name"> -->
               </div>
               <div id="email" class="form-group">
-                <label for="inputemail">*EMAIL</label>
+                <label for="inputemail">* EMAIL</label>
                 <input type="email" class="form-control ajax-input" id="inputemail" placeholder="" data-required="Email Required" data-output-label="Output Email">
               </div>
-              <div id="events" class="form-group">
-                <label for="inputevents">*I WILL ATTEND TO</label>
-                <select multiple id="inputevents" class="form-control ajax-input" data-required="Please Select Events" data-output-label="Output Events">
-                  <option>Wedding Day</option>
-                  <option>Ceremony Day</option>
-                  <option>The Party</option>
-                </select>
+              <div class="form-group" id="plusses-form-group">
+                <label>* ADDITIONAL GUESTS</label>
+                <div id="plusses"></div>
               </div>
             </div>
             <div class="col-md-6">
@@ -1654,7 +1651,7 @@
             </div>
             <div class="col-md-12 text-center">
               <div class="form-group">
-                <input type="submit" id="submitButton"  name="submitButton" class="button medium reverse" value="SUBMIT">
+                <input type="submit" id="submitButton" name="submitButton" class="button medium reverse" value="SUBMIT">
               </div>
             </div>
           </form>
@@ -1757,6 +1754,7 @@
 
   <!-- Custom Core Script -->
   <script type="text/javascript" src="js/script.js"></script>
+  <script type="text/javascript" src="js/rsvp-guests.js"></script>
   <script type="text/javascript" src="js/map-script.js"></script>
   <!-- Custom Additional Script -->
   <script type="text/javascript" src="js/main-slider-fade.js"></script>
