@@ -20,6 +20,7 @@
 			}
 		}
 		$email_to  =  'tonyandamandanguyen@gmail.com';
+		$email_subject = "Wedding RSVP"; 
 
 		$headers = "From: ".$_POST["inputemail"]."\r\n";
 		$headers .= "Reply-To: ".$_POST["inputemail"]."\r\n";
