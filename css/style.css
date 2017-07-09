@@ -2568,6 +2568,16 @@ form .has-error .btn-primary{
 	background-color:#FFF
 }
 
+#plusses .plus-checkbox {
+	margin-right: 10px;
+}
+
+#plusses label {
+	font-family: 'Arvo', serif;
+    font-size: 15px;
+    line-height: 1;
+}
+
 /* ----------------------------------------------*/
 /* 12.5 Footer Section				 			 */
 /* ----------------------------------------------*/
@@ -3564,6 +3574,10 @@ p{
 #rsvp{
 	padding:60px 0;
 	background-color:#FFF
+}
+
+.plus-checkbox {
+	margin-right: 10px;
 }
 
 /*===============================================*/

@@ -7,26 +7,27 @@
 	}
 
 	// IF NO ERROR
-	if (isset($_POST["all_input_id"])){
+	if (isset($_POST["primary"])){
 
-		$finalmessage = "";
-		foreach ($_POST["all_input_id"] as $input_id) {
-			if (is_array($_POST[$input_id])){
-				$finalmessage .= $_POST[$input_id."_label"]." : ".implode(", ", $_POST[$input_id]). "\n\n";
-			}
-			else
-			{
-				$finalmessage .= $_POST[$input_id."_label"]." : ". $_POST[$input_id] . "\n\n";
-			}
+		$primary_guest = $_POST["primary"]
+		$final_message = "";
+
+		$final_message .= $primary_guest . " has RSVP'd to the Lee and Nguyen wedding!\n\n"
+		$final_message .= "Primary Guest: " . $primary_guest
+
+		$final_message .= "Secondary Guests:\n"
+		foreach ($_POST["secondary"] as $guest) {
+			$final_message .= "- " . $guest . "\n"
 		}
+
 		$email_to  =  'tonyandamandanguyen@gmail.com';
 		$email_subject = "Wedding RSVP"; 
 
 		$headers = "From: ".$_POST["inputemail"]."\r\n";
 		$headers .= "Reply-To: ".$_POST["inputemail"]."\r\n";
-		$subject = "RSVP message from Mr/Mrs ".$_POST["inputname"];
+		$subject = "[Lee & Nguyen] RSVP message from Mr/Mrs ".$primary_guest;
 
-		if(mail($email_to, $subject, $finalmessage, $headers)){
+		if(mail($email_to, $subject, $final_message, $headers)){
 			$output = json_encode(array('type'=>'success', 'text' => 'Message Sent'));
 		}else{
 			$output = json_encode(array('type'=>'error', 'text' => 'Failed'));
