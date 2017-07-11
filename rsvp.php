@@ -13,12 +13,19 @@
 		$final_message = " ";
 
 		$final_message .= $primary_guest . " has RSVP'd to the Lee and Nguyen wedding!\n\n";
-		$final_message .= "Primary Guest: " . $primary_guest . "\n\n";
+		$final_message .= "Primary Guest: " . $primary_guest . "\n";
+		$final_message .= "Email: " . $_POST["email"] . "\n\n";
 
-		$final_message .= "Secondary Guests:\n";
-		foreach ($_POST["secondary"] as $guest) {
-			$final_message .= "- " . $guest . "\n";
+		if (isset($_POST["secondary"])) {
+			$final_message .= "Secondary Guests:\n";
+			foreach ($_POST["secondary"] as $guest) {
+				$final_message .= "- " . $guest . "\n";
+			}
 		}
+
+		$final_message .= "\n";
+		$final_message .= "Message:\n";
+		$final_message .= $_POST["message"];
 
 		$email_to  =  "tonyandamandanguyen@gmail.com";
 		$email_subject = "Wedding RSVP";
