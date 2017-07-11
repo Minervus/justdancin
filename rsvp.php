@@ -9,13 +9,13 @@
 	// IF NO ERROR
 	if (isset($_POST["primary"])){
 
-		$primary_guest = $_POST["primary"]
-		$final_message = "";
+		$primary_guest = $_POST["primary"];
+		$final_message = " ";
 
-		$final_message .= $primary_guest . " has RSVP'd to the Lee and Nguyen wedding!\n\n"
-		$final_message .= "Primary Guest: " . $primary_guest
+		$final_message .= $primary_guest . " has RSVP'd to the Lee and Nguyen wedding!\n\n";
+		$final_message .= "Primary Guest: " . $primary_guest;
 
-		$final_message .= "Secondary Guests:\n"
+		$final_message .= "Secondary Guests:\n";
 		foreach ($_POST["secondary"] as $guest) {
 			$final_message .= "- " . $guest . "\n";
 		}
