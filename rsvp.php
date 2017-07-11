@@ -13,7 +13,7 @@
 		$final_message = " ";
 
 		$final_message .= $primary_guest . " has RSVP'd to the Lee and Nguyen wedding!\n\n";
-		$final_message .= "Primary Guest: " . $primary_guest;
+		$final_message .= "Primary Guest: " . $primary_guest . "\n\n";
 
 		$final_message .= "Secondary Guests:\n";
 		foreach ($_POST["secondary"] as $guest) {
@@ -21,7 +21,7 @@
 		}
 
 		$email_to  =  "tonyandamandanguyen@gmail.com";
-		$email_subject = "Wedding RSVP"; 
+		$email_subject = "Wedding RSVP";
 
 		$headers = "From: ".$_POST["inputemail"]."\r\n";
 		$headers .= "Reply-To: ".$_POST["inputemail"]."\r\n";
@@ -29,7 +29,7 @@
 
 		if(mail($email_to, $subject, $final_message, $headers)){
 			$output = json_encode(array('type'=>'success', 'text' => 'Message Sent'));
-		}else{
+		} else {
 			$output = json_encode(array('type'=>'error', 'text' => 'Failed'));
 		}
 		die($output);
