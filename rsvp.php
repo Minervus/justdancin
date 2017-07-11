@@ -30,9 +30,9 @@
 		$email_to  =  "tonyandamandanguyen@gmail.com";
 		$email_subject = "Wedding RSVP";
 
-		$headers = "From: ".$_POST["inputemail"]."\r\n";
-		$headers .= "Reply-To: ".$_POST["inputemail"]."\r\n";
-		$subject = "[Lee & Nguyen] RSVP message from Mr/Mrs ".$primary_guest;
+		$headers = "From: NewLeeNguyens.com (" . $_POST["email"] . ")\r\n";
+		$headers .= "Reply-To: " . $_POST["email"] . "\r\n";
+		$subject = "[Lee & Nguyen] RSVP message from Mr/Mrs " . $primary_guest;
 
 		if(mail($email_to, $subject, $final_message, $headers)){
 			$output = json_encode(array('type'=>'success', 'text' => 'Message Sent'));
