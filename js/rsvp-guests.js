@@ -4,13 +4,96 @@
 //=======================================================================================
 var guests = [
   {
-    name: 'Allyson Ng',
-    plusses: [
-      'Stuart Ng',
-      'Allyson Junior Ng',
+    name: 'Huynh & Jan Nguyen'
+
+  }, {
+    name: 'Phuong Graham',
+      plusses: [
+      'James Graham',
+      'Thomas Graham',
+      'Andrew Graham',
     ]
   }, {
-    name: 'Gary Yau'
+    name: 'Xinh Nguyen',
+      plusses: [
+      'Chris Nguyen',
+      'Jayme Nguyen',
+      'Connor Nguyen',
+      'Eve Nguyen',
+      'Anton Nguyen',
+    ]
+  }, {
+    name: 'Tuyen Nguyen',
+      plusses: [
+      'Tuan Nguyen',
+      
+    ]
+  }, {
+    name: 'Jeremie Bernardin',
+        plusses: [
+      'Jolene Bianco',
+    
+    ]
+  }, {
+    name: 'Felix Levert',
+        plusses: [
+      'Sarah Kudrick',
+      
+    ]
+  }, {
+    name: 'Clyde So',
+        plusses: [
+      'Stephanie So',
+
+    ]
+  }, {
+    name: 'Clinton Kwan'
+  }, {
+    name: 'Kevin Wong',
+        plusses: [
+      'Winnie Wong',
+
+    ]
+  }, {
+    name: 'Sunil Dheda',
+        plusses: [
+      'Sarika Dheda',
+
+    ]
+  }, {
+    name: 'Bradley Ahn'
+  }, {
+    name: 'Kaye Au-Duong',
+      plusses: [
+      'Matthew Ng-Wai Shing',
+
+    ]
+
+  }, {
+    name: 'Hamesh Bhana'
+  }, {
+    name: 'Desmond Joe',
+            plusses: [
+      'Jeanie Joe',
+      'Aria Joe', 
+
+    ]
+  }, {
+    name: 'Kenny Leung'
+  }, {
+    name: 'Yaseen Patel'
+  }, {
+    name: 'Jo Wong'
+  }, {
+    name: 'Joshua & Anna Ng',
+            plusses: [
+      'Logan Ng',
+
+    ]
+  }, {
+    name: 'Robert & Laura Lee'
+  }, {
+    name: 'Landon Lee'
   }
 ]
 
