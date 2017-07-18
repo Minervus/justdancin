@@ -303,6 +303,10 @@ img.with-border{
 	border:1px solid #6a6a6a;
 }
 
+.text-shadow {
+	text-shadow: 2px 2px 4px #000;
+}
+
 
 /*===============================================*/
 /* 02. NAV BAR  	 							 */
@@ -1599,7 +1603,7 @@ input[type=submit]:disabled, input[type=submit]:hover:disabled{
 }
 
 .banner-text.light *{
-	color:#f0394d;
+	color: #FFF;
 }
 
 .banner-text.dark{
@@ -2863,7 +2867,7 @@ h2#dont-miss-it-title{
 	font-size:48px;
 	margin-bottom:30px;
 	font-family: 'Pacifico', cursive;
-	color: #f0394d;
+	color: white;
 }
 
 .circle-countdown{
