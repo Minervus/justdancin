@@ -94,6 +94,97 @@ var guests = [
     name: 'Robert & Laura Lee'
   }, {
     name: 'Landon Lee'
+  }, {
+    name: 'Alyssa Lee & Luke Cunningham'
+  }, {
+    name: 'Phil & Esther Lee'
+  }, {
+    name: 'Jordan Lee'
+  }, {
+    name: 'Jenica Lee'
+  }, {
+    name: 'Doug Lee & Tia Giang',
+    plusses: [
+          'Meagan Lee',
+          'Lindsay Lee',
+    ]
+  }, {
+    name: 'Matthew Lee'
+  }, {
+    name: 'Trevor Lee'
+  }, {
+    name: 'Annette & Paul Fung',
+        plusses: [
+          'Jessica Fung',
+          'Jillian Fung',
+          'Cameron Fung',
+    ]
+  }, {
+    name: 'Chris Lee'
+  }, {
+    name: 'Edmond & May Lee'
+  }, {
+    name: 'Kelly Chow'
+  }, {
+    name: 'Caroline Chow & Ray Leung'
+  }, {
+    name: 'Grace & Walter Soo'
+  }, {
+    name: 'Gary Chow'
+  }, {
+    name: 'Adrianna Teoh'
+  }, {
+    name: 'Mika Low'
+  }, {
+    name: 'Jennicar Altares'
+  }, {
+    name: 'Fondie & Christian Knowler'
+  }, {
+    name: 'Nicole Chong',
+    plusses: [
+      'Trevor Chong',
+    ]
+  }, {
+    name: 'Tiffany Tan'
+  }, {
+    name: 'Sheena Narayan'
+  }, {
+    name: 'Catherine Hwee'
+  }, {
+    name: 'Kristen Wilson',
+      plusses: [
+        'Dustin Koepke',
+      ]
+  }, {
+    name: 'Terence Hui'
+  }, {
+    name: 'Charlie Hui'
+  }, {
+    name: 'Wency Chan'
+  }, {
+    name: 'Kevin Lei'
+  }, {
+    name: 'Clara & Chanh Vuong',
+      plusses: [
+        'Danica Vuong',
+        'Bebe Vuong', 
+
+      ]
+  }, {
+    name: 'Ron Wong'
+  }, {
+    name: 'Ken Shum'
+  }, {
+    name: 'Tony Wong & Juliana Sam',
+      plusses: [
+        'Bebe WongSam',
+      ]
+  }, {
+    name: 'Thi Nguyen'
+  }, {
+    name: 'Marina Tran'
+  }, {
+    name: 'Jonross Fong'
   }
 ]
 
