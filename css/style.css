@@ -1593,13 +1593,13 @@ input[type=submit]:disabled, input[type=submit]:hover:disabled{
 }
 
 .banner-text.light{
-	color:#FFF;
+	color:#f0394d;
 	border-top:medium double #fff;
 	border-bottom:medium double #fff;
 }
 
 .banner-text.light *{
-	color:#FFF;
+	color:#f0394d;
 }
 
 .banner-text.dark{
@@ -2860,9 +2860,10 @@ footer .image-divider.fixed-height{
 /* 14.6 Don't Miss It / Countdown Section		 */
 /* ----------------------------------------------*/
 h2#dont-miss-it-title{
-	font-size:42px;
+	font-size:48px;
 	margin-bottom:30px;
 	font-family: 'Pacifico', cursive;
+	color: #f0394d;
 }
 
 .circle-countdown{
