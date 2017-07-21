@@ -26,19 +26,19 @@ var guests = [
     name: 'Tuyen Nguyen',
       plusses: [
       'Tuan Nguyen',
-      
+
     ]
   }, {
     name: 'Jeremie Bernardin',
         plusses: [
       'Jolene Bianco',
-    
+
     ]
   }, {
     name: 'Felix Levert',
         plusses: [
       'Sarah Kudrick',
-      
+
     ]
   }, {
     name: 'Clyde So',
@@ -75,7 +75,7 @@ var guests = [
     name: 'Desmond Joe',
             plusses: [
       'Jeanie Joe',
-      'Aria Joe', 
+      'Aria Joe',
 
     ]
   }, {
@@ -167,7 +167,7 @@ var guests = [
     name: 'Clara & Chanh Vuong',
       plusses: [
         'Danica Vuong',
-        'Bebe Vuong', 
+        'Bebe Vuong',
 
       ]
   }, {
@@ -202,6 +202,8 @@ function sortGuestsByName () {
       guest.plusses.sort()
     }
   })
+
+  guests.unshift({ name: 'Select your name...' });
 }
 
 function updatePlusGuests () {

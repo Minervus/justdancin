@@ -9,14 +9,14 @@ $(window).resize(function() {
 // INITIALIZE MAP
 function initialize() {
 
-  var coordCenter = new google.maps.LatLng(49.243346, -123.116931);
+  var coordCenter = new google.maps.LatLng(49.271827, -123.190424);
   var coordWedding = new google.maps.LatLng(49.271827, -123.190424);
-  var coordTea = new google.maps.LatLng(49.219996, -123.046207);
+  // var coordTea = new google.maps.LatLng(49.219996, -123.046207);
 
   // DEFINE MAP OPTIONS
   //=======================================================================================
   var mapOptions = {
-    zoom: 12,
+    zoom: 14,
     mapTypeId: google.maps.MapTypeId.ROADMAP,
     center: coordCenter,
     panControl: true,
@@ -43,34 +43,34 @@ function initialize() {
     labelClass: "labels" // the CSS class for the label
   });
 
-  var markerTea = new MarkerWithLabel({
-    position: coordTea,
-    draggable: false,
-    raiseOnDrag: false,
-    icon: ' ',
-    map: map,
-    labelContent: '<div class="de-icon circle small-size" style="background-color:#fff; border:1px solid #119E8A"><i class="de-icon-leaf" style="color:#119E8A"></i></div>',
-    labelAnchor: new google.maps.Point(20, 26),
-    labelClass: "labels" // the CSS class for the label
-  });
+  // var markerTea = new MarkerWithLabel({
+  //   position: coordTea,
+  //   draggable: false,
+  //   raiseOnDrag: false,
+  //   icon: ' ',
+  //   map: map,
+  //   labelContent: '<div class="de-icon circle small-size" style="background-color:#fff; border:1px solid #119E8A"><i class="de-icon-leaf" style="color:#119E8A"></i></div>',
+  //   labelAnchor: new google.maps.Point(20, 26),
+  //   labelClass: "labels" // the CSS class for the label
+  // });
 
   // INFO WINDOWS
   //=======================================================================================
-  var infoWedding = '<div>WEDDING CEREMONY</div>';
-  var infoTea = '<div>TEA CEREMONY</div>';
+  var infoWedding = '<h4>Wedding Ceremony</h4><div>2868 E 54th Ave, Vancouver, BC V5S 1Y3</div>';
+  // var infoTea = '<div>TEA CEREMONY</div>';
 
   var infoWindowWedding = new google.maps.InfoWindow({
     content: infoWedding
   });
 
-  var infoWindowTea = new google.maps.InfoWindow({
-    content: infoTea
-  });
+  // var infoWindowTea = new google.maps.InfoWindow({
+  //   content: infoTea
+  // });
 
 
   // OPEN INFO WINDOWS ON LOAD
   //=======================================================================================
-  // infoWindowWedding.open(map, markerWedding);
+  infoWindowWedding.open(map, markerWedding);
   // infoWindowTea.open(map, markerTea);
 
   // ON CLICK MARKER, OPEN INFO WINDOWS
@@ -79,9 +79,9 @@ function initialize() {
     infoWindowWedding.open(map, infoWedding);
   });
 
-  google.maps.event.addListener(markerTea, 'click', function() {
-    infoWindowTea.open(map, infoTea);
-  });
+  // google.maps.event.addListener(markerTea, 'click', function() {
+  //   infoWindowTea.open(map, infoTea);
+  // });
 
   //ON MARKER CLICK EVENTS
   //=======================================================================================
