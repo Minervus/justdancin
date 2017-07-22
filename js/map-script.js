@@ -56,7 +56,7 @@ function initialize() {
 
   // INFO WINDOWS
   //=======================================================================================
-  var infoWedding = '<h4>Wedding Ceremony</h4><div>2868 E 54th Ave, Vancouver, BC V5S 1Y3</div>';
+  var infoWedding = '<h4>Wedding Ceremony</h4><div>3875 Point Grey Road, Vancouver, BC V6R 1B3</div>';
   // var infoTea = '<div>TEA CEREMONY</div>';
 
   var infoWindowWedding = new google.maps.InfoWindow({
