@@ -34,6 +34,18 @@
 		$headers .= "Reply-To: " . $_POST["email"] . "\r\n";
 		$subject = "[Lee & Nguyen] RSVP message from Mr/Mrs " . $primary_guest;
 
+
+		$final_message .= "\n";
+		$final_message .= "Message:\n";
+		$final_message .= $_POST["message"];
+
+		$email_to  =  $_POST["email"];
+		$email_subject = "Thanks for your RSVP!";
+
+		$headers = "From: NewLeeNguyens.com (" . "tonyandamandanguyen@gmail.com" . ")\r\n";
+		$headers .= "Reply-To: " . $_POST["email"] . "\r\n";
+		$subject = "[Lee & Nguyen] RSVP message from Mr/Mrs " . "Tony and Amanda"
+
 		if(mail($email_to, $subject, $final_message, $headers)){
 			$output = json_encode(array('type'=>'success', 'text' => 'Message Sent'));
 		} else {
