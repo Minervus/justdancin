@@ -23,30 +23,30 @@
 			}
 		}
 
-		$final_message .= "\n";
-		$final_message .= "Message:\n";
-		$final_message .= $_POST["message"];
+		$final_message1 .= "\n";
+		$final_message1 .= "Message:\n";
+		$final_message1 .= $_POST["message"];
 
-		$email_to  =  "tonyandamandanguyen@gmail.com";
-		$email_subject = "Wedding RSVP";
+		$email_to1  =  "tonyandamandanguyen@gmail.com";
+		$email_subject1 = "Wedding RSVP";
 
-		$headers = "From: NewLeeNguyens.com (" . $_POST["email"] . ")\r\n";
-		$headers .= "Reply-To: " . $_POST["email"] . "\r\n";
-		$subject = "[Lee & Nguyen] RSVP message from Mr/Mrs " . $primary_guest;
+		$headers1 = "From: NewLeeNguyens.com (" . $_POST["email"] . ")\r\n";
+		$headers1 .= "Reply-To: " . $_POST["email"] . "\r\n";
+		$subject1 = "[Lee & Nguyen] RSVP message from Mr/Mrs " . $primary_guest;
 
 
-		//$final_message .= "\n";
-		//$final_message .= "Message:\n";
-		//$final_message .= $_POST["message"];
+		$final_message2 .= "\n";
+		$final_message2.= "Message:\n";
+		$final_message2 .= $_POST["message"];
 
-		$email_to  =  $_POST["email"];
-		$email_subject = "Thanks for your RSVP!";
+		$email_to2  =  $_POST["email"];
+		$email_subject2 = "Thanks for your RSVP!";
 
-		$headers = "From: NewLeeNguyens.com (" . "tonyandamandanguyen@gmail.com" . ")\r\n";
-		$headers .= "Reply-To: " . "tonyandamandanguyen@gmail.com" . "\r\n";
-		$subject = "[Lee & Nguyen] RSVP message from Mr/Mrs " . "Tony and Amanda"
+		$headers2 = "From: NewLeeNguyens.com (" . "tonyandamandanguyen@gmail.com" . ")\r\n";
+		$headers2 .= "Reply-To: " . "tonyandamandanguyen@gmail.com" . "\r\n";
+		$subject2 = "[Lee & Nguyen] RSVP message from Mr/Mrs " . "Tony and Amanda"
 
-		if(mail($email_to, $subject, $final_message, $headers)){
+		if(mail($email_to1, $subject1, $final_message1, $headers1, $email_to2, $subject2, $final_message2, $headers2)){
 			$output = json_encode(array('type'=>'success', 'text' => 'Message Sent'));
 		} else {
 			$output = json_encode(array('type'=>'error', 'text' => 'Failed'));
