@@ -23,7 +23,7 @@ var guests = [
       'Anton Nguyen',
     ]
   }, {
-    name: 'Tuyen Nguyen',
+    name: 'Tuyen Vo',
       plusses: [
       'Tuan Nguyen',
 
