@@ -185,7 +185,10 @@ var guests = [
     name: 'Marina Tran'
   }, {
     name: 'Jonross Fong'
+  },{
+    name: 'Travis & Rachel Gertz'
   }
+
 ]
 
 function sortGuestsByName () {
