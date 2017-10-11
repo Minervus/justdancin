@@ -6,14 +6,18 @@ var guests = [
   {
     name: 'Huynh & Jan Nguyen'
 
-  }, {
-    name: 'Phuong Graham',
-      plusses: [
-      'James Graham',
-      'Thomas Graham',
-      'Andrew Graham',
-    ]
-  }, {
+  }, 
+
+  // {
+  //   name: 'Phuong Graham',
+  //     plusses: [
+  //     'James Graham',
+  //     'Thomas Graham',
+  //     'Andrew Graham',
+  //   ]
+  // }, 
+
+  {
     name: 'Xinh Nguyen',
       plusses: [
       'Chris Nguyen',
@@ -22,19 +26,25 @@ var guests = [
       'Eve Nguyen',
       'Anton Nguyen',
     ]
-  }, {
-    name: 'Tuyen Vo',
-      plusses: [
-      'Tuan Nguyen',
+  }, 
 
-    ]
-  }, {
-    name: 'Jeremie Bernardin',
-        plusses: [
-      'Jolene Bianco',
+  // {
+  //   name: 'Tuyen Vo',
+  //     plusses: [
+  //     'Tuan Nguyen',
 
-    ]
-  }, {
+  //   ]
+  // }, 
+
+  // {
+  //   name: 'Jeremie Bernardin',
+  //       plusses: [
+  //     'Jolene Bianco',
+
+  //   ]
+  // }, 
+
+  {
     name: 'Felix Levert',
         plusses: [
       'Sarah Kudrick',
@@ -62,14 +72,16 @@ var guests = [
     ]
   }, {
     name: 'Bradley Ahn'
-  }, {
-    name: 'Kaye Au-Duong',
-      plusses: [
-      'Matthew Ng-Wai Shing',
+  }, 
+  // {
+  //   name: 'Kaye Au-Duong',
+  //     plusses: [
+  //     'Matthew Ng-Wai Shing',
 
-    ]
+  //   ]
 
-  }, {
+  // }, 
+  {
     name: 'Hamesh Bhana'
   }, {
     name: 'Desmond Joe',
@@ -82,25 +94,35 @@ var guests = [
     name: 'Kenny Leung'
   }, {
     name: 'Yaseen Patel'
-  }, {
-    name: 'Jo Wong'
-  }, {
-    name: 'Joshua & Anna Ng',
-            plusses: [
-      'Logan Ng',
+  }, 
+  // {
+  //   name: 'Jo Wong'
+  // }, 
+  // {
+  //   name: 'Joshua & Anna Ng',
+  //           plusses: [
+  //     'Logan Ng',
 
-    ]
-  }, {
-    name: 'Robert & Laura Lee'
-  }, {
-    name: 'Landon Lee'
-  }, {
-    name: 'Alyssa Lee & Luke Cunningham'
-  }, {
-    name: 'Phil & Esther Lee'
-  }, {
-    name: 'Jordan Lee'
-  }, {
+  //   ]
+  // }, 
+  // {
+  //   name: 'Robert & Laura Lee'
+  // }, 
+
+  // {
+  //   name: 'Landon Lee'
+  // }, 
+
+  // {
+  //   name: 'Alyssa Lee & Luke Cunningham'
+  // }, 
+  // {
+  //   name: 'Phil & Esther Lee'
+  // }, 
+  // {
+  //   name: 'Jordan Lee'
+  // }, 
+  {
     name: 'Jenica Lee'
   }, {
     name: 'Doug Lee & Tia Giang',
@@ -110,26 +132,37 @@ var guests = [
     ]
   }, {
     name: 'Matthew Lee'
-  }, {
-    name: 'Trevor Lee'
-  }, {
-    name: 'Annette & Paul Fung',
-        plusses: [
-          'Jessica Fung',
-          'Jillian Fung',
-          'Cameron Fung',
-    ]
-  }, {
-    name: 'Chris Lee'
-  }, {
-    name: 'Edmond & May Lee'
-  }, {
+  }, 
+  // {
+  //   name: 'Trevor Lee'
+  // }, 
+
+  // {
+  //   name: 'Annette & Paul Fung',
+  //       plusses: [
+  //         'Jessica Fung',
+  //         'Jillian Fung',
+  //         'Cameron Fung',
+  //   ]
+  // }, 
+
+  // {
+  //   name: 'Chris Lee'
+  // }, 
+  // {
+  //   name: 'Edmond & May Lee'
+  // }, 
+  {
     name: 'Kelly Chow'
   }, {
     name: 'Caroline Chow & Ray Leung'
-  }, {
+  }, 
+
+  /*{
     name: 'Grace & Walter Soo'
-  }, {
+  },
+
+  */ {
     name: 'Gary Chow'
   }, {
     name: 'Adrianna Teoh'
@@ -137,9 +170,11 @@ var guests = [
     name: 'Mika Low'
   }, {
     name: 'Jennicar Altares'
-  }, {
-    name: 'Fondie & Christian Knowler'
-  }, {
+  }, 
+  // {
+  //   name: 'Fondie & Christian Knowler'
+  // }, 
+  {
     name: 'Nicole Chong',
     plusses: [
       'Trevor Chong',
@@ -148,9 +183,13 @@ var guests = [
     name: 'Tiffany Tan'
   }, {
     name: 'Sheena Narayan'
-  }, {
-    name: 'Catherine Hwee'
-  }, {
+  }, 
+
+  // {
+  //   name: 'Catherine Hwee'
+  // }, 
+
+  {
     name: 'Kristen Wilson',
       plusses: [
         'Dustin Koepke',
@@ -159,31 +198,40 @@ var guests = [
     name: 'Terence Hui'
   }, {
     name: 'Charlie Hui'
-  }, {
-    name: 'Wency Chan'
-  }, {
+  }, 
+  // {
+  //   name: 'Wency Chan'
+  // }, 
+  {
     name: 'Kevin Lei'
-  }, {
-    name: 'Clara & Chanh Vuong',
-      plusses: [
-        'Danica Vuong',
-        'Bebe Vuong',
+  }, 
+  // {
+  //   name: 'Clara & Chanh Vuong',
+  //     plusses: [
+  //       'Danica Vuong',
+  //       'Bebe Vuong',
 
-      ]
-  }, {
+  //     ]
+  // }, 
+
+  {
     name: 'Ron Wong'
-  }, {
-    name: 'Ken Shum'
-  }, {
+  }, 
+  //{
+  //name: 'Ken Shum'
+  //}, 
+  {
     name: 'Tony Wong & Juliana Sam',
       plusses: [
         'Bebe WongSam',
       ]
   }, {
     name: 'Thi Nguyen'
-  }, {
-    name: 'Marina Tran'
-  }, {
+  }, 
+  // {
+  //   name: 'Marina Tran'
+  // }, 
+  {
     name: 'Jonross Fong'
   },{
     name: 'Travis & Rachel Gertz'
