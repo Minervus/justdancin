@@ -164,9 +164,13 @@ var guests = [
 
   */ {
     name: 'Gary Chow'
-  }, {
-    name: 'Adrianna Teoh'
-  }, {
+  }, 
+
+  // {
+  //   name: 'Adrianna Teoh'
+  // }, 
+
+  {
     name: 'Mika Low'
   }, {
     name: 'Jennicar Altares'
