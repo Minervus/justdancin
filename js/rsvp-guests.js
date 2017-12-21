@@ -239,7 +239,11 @@ var guests = [
     name: 'Jonross Fong'
   },{
     name: 'Travis & Rachel Gertz'
+  },{
+    name: 'Ricky Wan'
   }
+
+
 
 ]
 
