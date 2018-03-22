@@ -369,7 +369,7 @@ $(document).ready(function() {
 	//------------------------------------------------------------------------------
 	if ($("#gift-registry").length){
     	$("#gift-registry").owlCarousel({
-			items : 3, 
+			items : 1, 
 			autoPlay: 2000,
 			stopOnHover: true,
 			pagination: true,

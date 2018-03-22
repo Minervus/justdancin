@@ -44,13 +44,14 @@ var guests = [
   //   ]
   // }, 
 
-  {
-    name: 'Felix Levert',
-        plusses: [
-      'Sarah Kudrick',
+  // {
+  //   name: 'Felix Levert',
+  //       plusses: [
+  //     'Sarah Kudrick',
 
-    ]
-  }, {
+  //   ]
+  // }, 
+  {
     name: 'Clyde So',
         plusses: [
       'Stephanie So',
@@ -105,17 +106,21 @@ var guests = [
 
   //   ]
   // }, 
-  // {
-  //   name: 'Robert & Laura Lee'
-  // }, 
+  {
+    name: 'Desne and Eugene Sullivan'
+  }, 
 
   // {
   //   name: 'Landon Lee'
   // }, 
 
-  // {
-  //   name: 'Alyssa Lee & Luke Cunningham'
-  // }, 
+  {
+    name: 'Andy & Kha Huynh',
+                plusses: [
+      'Philip Huynh',
+
+    ]
+  }, 
   // {
   //   name: 'Phil & Esther Lee'
   // }, 
