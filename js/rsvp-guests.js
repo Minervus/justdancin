@@ -121,9 +121,9 @@ var guests = [
 
     ]
   }, 
-  // {
-  //   name: 'Phil & Esther Lee'
-  // }, 
+  {
+    name: 'Sue & Ray Cheung'
+  }, 
   // {
   //   name: 'Jordan Lee'
   // }, 
